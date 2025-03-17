@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #2A2A72;
+    --secondary-color: #009FFD;
+    --accent-color: #FF3C3C;
+    --gradient-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    background: var(--gradient-bg);
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#main {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 20px;
+    width: 90%;
+    max-width: 1200px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#main:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#img-div {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    filter: grayscale(20%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#image:hover {
+    transform: scale(1.02);
+    filter: grayscale(0);
+}
+
+#img-caption {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+#tribute-info {
+    text-align: left;
+    margin: 2rem 0;
+    /* Adicionei o ponto e vírgula acima */
+}
